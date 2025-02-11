@@ -1,7 +1,7 @@
 <script setup>
-import Page from "./components/page.vue";
+import Portfolio from "./components/Portfolio.vue";
 </script>
 
 <template>
-  <Page />
+  <Portfolio />
 </template>
