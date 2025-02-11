@@ -1,12 +1,13 @@
+<script setup>
+defineProps({
+  portfolioTitle: {
+    type: String,
+    required: true,
+  },
+});
+</script>
 <template>
-  <div>
-    <h1 class="headerWrap">切版作品</h1>
-  </div>
+  <h1 class="m-[20px] text-center text-4xl">{{ portfolioTitle }}</h1>
 </template>
 
-<style scoped>
-.headerWrap {
-  margin: 10px;
-  text-align: center;
-}
-</style>
+<style scoped></style>
