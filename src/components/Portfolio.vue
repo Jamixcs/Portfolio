@@ -43,7 +43,7 @@ const portfolioCategories = reactive([
         name: "2024 數位城市治理黑客松 - 官網",
         team: "團隊：前端 2 人",
         content:
-          "負責設計並開發 台南市政府 & 好想工作室 聯合辦理之 AI 松之活動官網，使用 Hexo 框架，並根據需求實現 dialogue、table 等 layout",
+          "負責設計並開發 台南市政府 & 好想工作室 聯合辦理之 AI 松之活動官網，使用 Hexo 框架，並根據需求實現 Dialogue、Table 等 layout",
         href: "https://aithon2024.goodideas-studio.com/",
         target: "blank",
         src: aithon,
@@ -78,7 +78,7 @@ const portfolioCategories = reactive([
       {
         name: "原生切版",
         content:
-          "掌握 Box Model、line-box、Normal Flow 及 Inline/Block 元素的使用，使用原生 CSS 調整佈局，並理解 HTML tag 語意及簡單動畫效果。加強對 HTML 結構與排版的理解，並了解程式碼在瀏覽器中的作用。",
+          "掌握 Box Model、Line-box、Normal Flow 及 Inline / Block 元素的運用，實踐語意化標記，製作簡單動畫效果，並理解程式碼在瀏覽器中的運作方式。",
         href: "https://jamixcs.github.io/t1/",
         target: "blank",
         src: t1,
@@ -89,7 +89,7 @@ const portfolioCategories = reactive([
       {
         name: "原生切版",
         content:
-          "進一步熟悉原生寫法，養成良好命名習慣，實作 GitMind HTML 結構樹狀圖後開始進行切版流程。",
+          "進一步熟悉原生寫法，養成良好命名習慣，使用 GitMind 建立 HTML 結構樹狀圖，並啟動切版流程。",
         href: "https://jamixcs.github.io/t2/",
         target: "blank",
         src: t2,
@@ -100,7 +100,7 @@ const portfolioCategories = reactive([
       {
         name: "UI 框架切版",
         content:
-          "使用 Bootstrap 練習 Row / Col 格線系統，快速建立 RWD 版面，並透過 Dropdown、Modal 等 UI 元件增加互動體驗。",
+          "使用 Bootstrap 練習 Row / Col 格線系統，熟悉 Flex 和 Grid 語法，高效建構 RWD 版面，並運用 Dropdown、Modal 等 UI 元件提升互動體驗。",
         href: "https://jamixcs.github.io/t3/",
         target: "blank",
         src: t3,
@@ -111,7 +111,7 @@ const portfolioCategories = reactive([
       {
         name: "UI 框架切版",
         content:
-          "深入理解容器與內容的區別，實現排版與內容分離的設計理念。釐清設計稿中的變動與固定距離，進一步設計 RWD 版面。",
+          "深入理解容器與內容的區別，實踐排版與內容分離的設計理念。釐清設計稿中的變動與固定距離，優化 RWD 版面設計。",
         href: "https://jamixcs.github.io/t4/",
         target: "blank",
         src: t4,
@@ -122,7 +122,7 @@ const portfolioCategories = reactive([
       {
         name: "UI 框架切版 + 預處理器",
         content:
-          "掌握 Sass 中 mixin 及 extend 的使用方式，實現元件的複用。練習巢狀寫法與拆檔思路，提升結構的可維護性。",
+          "掌握 Sass 中 mixin 與 extend 的應用，實現元件複用。練習巢狀寫法與檔案拆分，提升程式碼的結構與可維護性。",
         href: "https://jamixcs.github.io/t6/",
         target: "blank",
         src: t6,
