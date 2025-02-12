@@ -87,9 +87,9 @@ const posts = [
           <a
             :href="project.href"
             :target="project.target"
-            class="relative z-10 inline-block transform self-center rounded-md bg-slate-600 px-4 py-2 text-lg text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-slate-700 focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:outline-none md:self-end"
+            class="relative z-10 inline-block transform self-center rounded-md bg-slate-500 px-4 py-2 text-lg text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 focus:outline-none md:self-end"
           >
-            查看作品詳情
+            🔍 查看作品
           </a>
         </article>
       </div>
