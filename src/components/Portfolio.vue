@@ -6,7 +6,6 @@ import {
   Menu,
   MenuButton,
   MenuItem,
-  MenuItems,
 } from "@headlessui/vue";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
 
@@ -163,7 +162,7 @@ const portfolioCategories = reactive([
               </div>
             </div>
           </div>
-          <div class="hidden md:block">
+          <div class="md:block">
             <div class="ml-4 flex items-center md:ml-6">
               <!-- Profile dropdown -->
               <Menu as="div" class="relative ml-3">
@@ -180,46 +179,8 @@ const portfolioCategories = reactive([
                     />
                   </MenuButton>
                 </div>
-                <!-- <transition
-                  enter-active-class="transition ease-out duration-100"
-                  enter-from-class="transform opacity-0 scale-95"
-                  enter-to-class="transform opacity-100 scale-100"
-                  leave-active-class="transition ease-in duration-75"
-                  leave-from-class="transform opacity-100 scale-100"
-                  leave-to-class="transform opacity-0 scale-95"
-                >
-                  <MenuItems
-                    class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 focus:outline-hidden"
-                  >
-                    <MenuItem
-                      v-for="item in userNavigation"
-                      :key="item.name"
-                      v-slot="{ active }"
-                    >
-                      <a
-                        :href="item.href"
-                        :class="[
-                          active ? 'bg-gray-100 outline-hidden' : '',
-                          'block px-4 py-2 text-sm text-gray-700',
-                        ]"
-                        >{{ item.name }}</a
-                      >
-                    </MenuItem>
-                  </MenuItems>
-                </transition> -->
               </Menu>
             </div>
-          </div>
-          <div class="-mr-2 flex md:hidden">
-            <!-- Mobile menu button -->
-            <DisclosureButton
-              class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
-            >
-              <span class="absolute -inset-0.5" />
-              <span class="sr-only">Open main menu</span>
-              <Bars3Icon v-if="!open" class="block size-6" aria-hidden="true" />
-              <XMarkIcon v-else class="block size-6" aria-hidden="true" />
-            </DisclosureButton>
           </div>
         </div>
       </div>
@@ -254,14 +215,6 @@ const portfolioCategories = reactive([
                 {{ user.email }}
               </div>
             </div>
-            <!-- <button
-              type="button"
-              class="relative ml-auto shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
-            >
-              <span class="absolute -inset-1.5" />
-              <span class="sr-only">View notifications</span>
-              <BellIcon class="size-6" aria-hidden="true" />
-            </button> -->
           </div>
           <div class="mt-3 space-y-1 px-2">
             <DisclosureButton
@@ -276,14 +229,6 @@ const portfolioCategories = reactive([
         </div>
       </DisclosurePanel>
     </Disclosure>
-
-    <!-- <header class="bg-white shadow-sm">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">
-          Dashboard
-        </h1>
-      </div>
-    </header> -->
     <main
       class="flex flex-row flex-wrap items-center justify-center gap-4 p-[30px] text-2xl"
     >
