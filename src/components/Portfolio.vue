@@ -41,18 +41,35 @@ const portfolioCategories = reactive([
     title: "接案作品",
     projects: [
       {
-        name: "aithon",
+        name: "2024 數位城市治理黑客松 - 官網",
+        team: "團隊：前端 2 人",
+        content:
+          "負責設計並開發 台南市政府 & 好想工作室 聯合辦理之 AI 松之活動官網，使用 Hexo 框架，實現活動報名與資訊展示功能，提升參與者體驗。",
         href: "https://aithon2024.goodideas-studio.com/",
         target: "blank",
         src: aithon,
         alt: "aithon",
+        time: "2024/8~2024/12",
+        tag: ["Hexo", "HTML", "CSS (SASS)", "JavaScript", "RWD", "協作開發"],
       },
       {
-        name: "chaobang",
+        name: "兆邦醫材網站製作",
+        team: "團隊：前端 2 人、UI/UX 設計 1 人、PM 1 人",
+        content: `使用 Vue 2 + Nuxt.js 框架開發 企業形象官網，與團隊密切協作，精確還原設計稿並實現業主需求。\n負責開發首頁、公司介紹、個案實例、聯絡頁面等，並實作 RWD、串接後端 API，確保網站順暢運行與良好用戶體驗。`,
         href: "https://chao-bang.com/",
         target: "blank",
         src: chaobang,
         alt: "chaobang",
+        time: "2024/12~2024/2",
+        tag: [
+          "Vue 2",
+          "Nuxt.js",
+          "VueX",
+          "RWD",
+          "協作開發",
+          "前後端分離",
+          "API 串接",
+        ],
       },
     ],
   },
@@ -60,39 +77,49 @@ const portfolioCategories = reactive([
     title: "切版作品",
     projects: [
       {
-        name: "t1",
+        name: "原生切版",
         href: "https://jamixcs.github.io/t1/",
         target: "blank",
         src: t1,
         alt: "t1",
+        time: "2024/2",
+        tag: ["HTML", "CSS"],
       },
       {
-        name: "t2",
+        name: "原生切版",
         href: "https://jamixcs.github.io/t2/",
         target: "blank",
         src: t2,
         alt: "t2",
+        time: "2024/3",
+        tag: ["HTML", "CSS"],
       },
       {
-        name: "t3",
+        name: "UI 框架切版",
         href: "https://jamixcs.github.io/t3/",
         target: "blank",
         src: t3,
         alt: "t3",
+        time: "2024/3",
+        tag: ["HTML", "CSS", "Bootstrap", "RWD"],
       },
       {
-        name: "t4",
+        name: "UI 框架切版",
         href: "https://jamixcs.github.io/t4/",
         target: "blank",
         src: t4,
         alt: "t4",
+        time: "2024/4",
+        tag: ["HTML", "CSS", "Bootstrap", "RWD"],
       },
       {
-        name: "t6",
+        name: "UI 框架切版 + 預處理器",
         href: "https://jamixcs.github.io/t6/",
         target: "blank",
         src: t6,
         alt: "t6",
+        time: "2024/5",
+        tag: ["HTML", "CSS", "Bootstrap", "SASS", "RWD"],
       },
     ],
   },
@@ -135,7 +162,7 @@ const portfolioCategories = reactive([
                     class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
                   >
                     <span class="absolute -inset-1.5" />
-                    <span class="sr-only">Open user menu</span>
+                    <!-- <span class="sr-only">Open user menu</span> -->
                     <img
                       class="size-8 rounded-full"
                       :src="user.imageUrl"
@@ -143,7 +170,7 @@ const portfolioCategories = reactive([
                     />
                   </MenuButton>
                 </div>
-                <transition
+                <!-- <transition
                   enter-active-class="transition ease-out duration-100"
                   enter-from-class="transform opacity-0 scale-95"
                   enter-to-class="transform opacity-100 scale-100"
@@ -169,7 +196,7 @@ const portfolioCategories = reactive([
                       >
                     </MenuItem>
                   </MenuItems>
-                </transition>
+                </transition> -->
               </Menu>
             </div>
           </div>
@@ -248,10 +275,10 @@ const portfolioCategories = reactive([
       </div>
     </header> -->
     <main
-      class="flex flex-row flex-wrap items-center justify-center gap-4 text-2xl font-bold"
+      class="flex flex-row flex-wrap items-center justify-center gap-4 p-[30px] text-2xl"
     >
       <div v-for="(portfolio, index) in portfolioCategories" :key="index">
-        <Header :portfolioTitle="portfolio.title" />
+        <Header :portfolioTitle="portfolio.title" class="font-bold" />
         <List :portfolioProjects="portfolio.projects" />
       </div>
     </main>
