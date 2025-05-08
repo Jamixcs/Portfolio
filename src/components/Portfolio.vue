@@ -27,6 +27,7 @@ import Header from "./header.vue";
 import List from "./list.vue";
 import aithon from "../img/aithon.png";
 import chaobang from "../img/chaobang.jpeg";
+import atec from "../img/atec.png";
 
 import t1 from "../img/t1.png";
 import t2 from "../img/t2.jpg";
@@ -40,21 +41,49 @@ const portfolioCategories = reactive([
     title: "接案作品",
     projects: [
       {
-        name: "2024 數位城市治理黑客松 - 官網",
+        name: "職缺平台系統",
         team: "團隊：前端 2 人",
-        content:
-          "負責設計並開發 台南市政府 & 好想工作室 聯合辦理之 AI 松之活動官網，使用 Hexo 框架，並根據需求實現 Dialogue、Table 等 layout",
-        href: "https://aithon2024.goodideas-studio.com/",
-        target: "blank",
-        src: aithon,
-        alt: "aithon",
-        time: "2024/8~2024/12",
-        tag: ["Hexo", "HTML", "CSS ", "Sass", "JavaScript", "RWD", "協作開發"],
+        content: `擔任專案窗口，統籌需求釐清與目標對齊，協調資源配置，確保專案範疇、時程與品質如期落實。
+建立專案管理流程與協作機制，定期同步進度與問題
+切分任務並分配至前端團隊，根據進度與優先級調整任務安排，持續追蹤並解決卡點
+應對需求變動，評估修改範圍與影響，快速與業主與團隊對齊共識並重新安排時程
+參與前端開發，根據流程圖設計並實作 RWD 畫面與互動元件，串接 Firebase 資料庫與帳號系統。
+規劃並實作前端邏輯與流程，包括：
+• Vue 3 專案架構初始化
+• Pinia store 設計與管理
+• 登入與帳號權限管理（Firebase Authentication）
+• 資料存取（Cloud Firestore、Cloud Storage）
+• CRUD 操作：求職者履歷與評論的建立、編輯、刪除
+• 企業／求職者之帳號會員資料管理
+• 響應式設計（RWD），支援 Desktop、Mobile 裝置瀏覽
+• Husky 設定，建立統一的程式碼提交規範`,
+        href: "",
+        target: "",
+        src: atec,
+        alt: "atec",
+        time: "2025/2~至今",
+        tag: [
+          "Vue 3",
+          "Pinia",
+          "Quasar",
+          "RWD",
+          "Firebase Authentication",
+          "Cloud Firestore",
+          "Cloud Storage",
+          "Husky",
+          "專案窗口",
+          "協作開發",
+          "API 串接",
+        ],
       },
       {
         name: "兆邦醫材網站製作",
         team: "團隊：前端 2 人、UI/UX 設計 1 人、PM 1 人",
-        content: `使用 Vue 2 + Nuxt.js 框架開發企業形象官網，精確還原設計稿並實現業主需求。\n負責：開發首頁、公司介紹、個案實例、聯絡頁面等，並實作 RWD與後端 API 串接，確保網站順暢運行與良好用戶體驗。`,
+        content: `使用 Vue 2 + Nuxt.js 架構開發網站，配合 Vuex 管理狀態，並整合 Sass 進行樣式設計，與設計師、後端工程師密切協作，根據設計稿精準實作畫面並滿足業主需求。
+規劃並實作前端頁面與邏輯，包括：
+• 首頁、公司介紹、個案實例、聯絡我們等主要頁面開發
+• RWD 響應式設計，支援多裝置瀏覽
+• 串接後端 API，實現動態內容與資料互動`,
         href: "https://chao-bang.com/",
         target: "blank",
         src: chaobang,
@@ -69,6 +98,19 @@ const portfolioCategories = reactive([
           "前後端分離",
           "API 串接",
         ],
+      },
+      {
+        name: "2024 數位城市治理黑客松 - 官網",
+        team: "團隊：前端 2 人",
+        content: `負責設計與開發「台南市政府 × 好想工作室 AI 松」活動官網，使用 Hexo 框架建置靜態網站。
+根據時程與需求，整合內容並彈性調整版面，確保報名資訊、活動進度與講者內容即時更新、同步無誤。
+優化資訊結構與頁面引導，提升使用者在瀏覽活動內容、進行報名時的操作體驗。`,
+        href: "https://aithon2024.goodideas-studio.com/",
+        target: "blank",
+        src: aithon,
+        alt: "aithon",
+        time: "2024/8~2024/12",
+        tag: ["Hexo", "HTML", "CSS ", "Sass", "JavaScript", "RWD", "協作開發"],
       },
     ],
   },

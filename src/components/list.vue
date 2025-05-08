@@ -85,11 +85,18 @@ const posts = [
             </p>
           </div>
           <a
+            v-if="project.href"
             :href="project.href"
             :target="project.target"
             class="relative z-10 inline-block transform self-center rounded-md bg-slate-500 px-4 py-2 text-lg text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 focus:outline-none md:self-end"
           >
             🔍 查看作品
+          </a>
+          <a
+            v-else
+            class="relative z-10 inline-block transform self-center rounded-md bg-slate-500 px-4 py-2 text-lg text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 focus:outline-none md:self-end"
+          >
+            內部系統，未能公開網址
           </a>
         </article>
       </div>
